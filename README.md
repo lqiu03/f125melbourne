@@ -4,20 +4,10 @@ A high-impact visualization tool for analyzing Formula 1 telemetry data, focusin
 
 ## Overview
 
-F1 Insights Visualizer (previously `quick_viz.py`) creates visually striking, presentation-ready charts that highlight critical driving techniques in challenging race conditions. The tool specializes in comparing drivers who crashed versus those who maintained control, with a focus on:
-
+F1 Insights Visualizer are charts on the following:
 - **Torque spike analysis**: Identifying sudden power delivery issues that lead to loss of traction
 - **Throttle control techniques**: Comparing progressive vs. abrupt throttle application patterns
 - **Power delivery patterns**: Analyzing common factors across different crash incidents
-
-## Features
-
-- 16:9 aspect ratio visualizations optimized for presentations
-- Color-coded insights with clear visual hierarchy
-- Team logo integration for immediate driver recognition
-- Intelligent data enhancement when telemetry is limited
-- Key insight summaries for quick comprehension
-- Modern dark-themed design with emphasis on critical data points
 
 ## Requirements
 
@@ -26,14 +16,12 @@ F1 Insights Visualizer (previously `quick_viz.py`) creates visually striking, pr
 - Matplotlib
 - Pandas
 - NumPy
-- Seaborn
-
 ## Installation
 
 ```bash
 # Create and activate a virtual environment (recommended)
 python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+source venv/bin/activate  
 
 # Install required packages
 pip install fastf1 matplotlib pandas numpy seaborn
@@ -66,16 +54,7 @@ The tool generates three main comparison visualizations:
 
 Each visualization includes detailed speed profiles, throttle application patterns, and torque delivery analysis, with clear annotations highlighting critical moments.
 
-## Customization
-
-You can customize the comparisons by modifying the `KEY_COMPARISONS` list in the script, allowing for different driver pairings and focus areas.
-
 ## Credits
 
 - Uses the FastF1 package for accessing Formula 1 telemetry data
-- Visualization design by Lucas Qiu
 - F1 data provided by the official F1 Fast API
-
-## Recommended Rename
-
-For better clarity about the tool's purpose, we recommend renaming `quick_viz.py` to `f1_insights_visualizer.py`. 
